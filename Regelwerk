@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Regelwerk – BuxtehudeRP</title>
+<style>
+:root{--bg:#07101d;--panel:#0d1929;--panel2:#111f32;--text:#f5f7fb;--muted:#a9b5c5;--accent:#3aa0ff;--accent2:#78c4ff;--line:#1c3048;--danger:#ff647c;--warning:#ffcc66}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#06101d 0%,#091525 55%,#050c16 100%);color:var(--text);min-height:100vh}
+nav{position:sticky;top:0;z-index:20;background:rgba(5,12,22,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:18px 7%;display:flex;justify-content:space-between;align-items:center}
+.brand{font-size:21px;font-weight:800;letter-spacing:.5px}.brand span{color:var(--accent)}nav a{color:#dce7f4;text-decoration:none;margin-left:25px;font-size:14px;transition:.2s}nav a:hover{color:var(--accent)}
+.hero{padding:90px 7% 55px;background:radial-gradient(circle at 75% 30%,rgba(58,160,255,.18),transparent 34%)}
+.hero-inner{max-width:900px}.eyebrow{display:inline-block;padding:8px 13px;border:1px solid #285b85;border-radius:999px;color:var(--accent2);background:rgba(58,160,255,.08);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.4px}
+h1{font-size:58px;margin:20px 0 14px;line-height:1}h1 span{color:var(--accent)}.hero p{color:var(--muted);font-size:18px;line-height:1.7;max-width:760px}
+.wrapper{padding:20px 7% 80px;display:grid;grid-template-columns:270px minmax(0,1fr);gap:25px;align-items:start}
+.sidebar{position:sticky;top:90px;background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:16px;padding:18px}.sidebar h3{margin:4px 0 14px}.sidebar a{display:block;color:var(--muted);text-decoration:none;padding:10px 11px;border-radius:8px;font-size:14px}.sidebar a:hover{background:rgba(58,160,255,.1);color:var(--accent2)}
+.search{margin-bottom:22px;position:relative}.search input{width:100%;padding:16px 18px;border-radius:12px;border:1px solid var(--line);background:#0a1626;color:#fff;font-size:15px;outline:none}.search input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(58,160,255,.08)}
+.notice{padding:18px 20px;border:1px solid #285b85;background:rgba(58,160,255,.07);border-radius:14px;color:#cfe9ff;line-height:1.6;margin-bottom:25px}
+.category{margin:0 0 32px;scroll-margin-top:100px}.category-title{font-size:28px;margin:0 0 15px}.category-title span{color:var(--accent)}
+.rule{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden;transition:.2s}.rule:hover{border-color:#315d85}.rule summary{list-style:none;cursor:pointer;padding:20px 22px;font-weight:700;display:flex;align-items:center;justify-content:space-between;gap:15px}.rule summary::-webkit-details-marker{display:none}.rule summary::after{content:'+';color:var(--accent);font-size:25px;font-weight:400}.rule[open] summary::after{content:'−'}.rule-body{padding:0 22px 20px;color:var(--muted);line-height:1.7}.rule-body p{margin:0 0 10px}.rule-body ul{margin:8px 0 0;padding-left:20px}.rule-body li{margin:6px 0}.important{border-color:#6e4d2a}.important summary{color:#ffe1a6}.danger{border-color:#6d3040}.danger summary{color:#ffc1cb}
+.empty{display:none;text-align:center;color:var(--muted);padding:40px;border:1px dashed var(--line);border-radius:14px}
+footer{border-top:1px solid var(--line);padding:28px 7%;color:#8291a4;display:flex;justify-content:space-between;font-size:13px}
+@media(max-width:900px){.wrapper{grid-template-columns:1fr}.sidebar{position:static}.sidebar-links{display:grid;grid-template-columns:1fr 1fr}h1{font-size:48px}}
+@media(max-width:600px){nav div:last-child{display:none}.hero{padding:70px 6% 40px}h1{font-size:40px}.wrapper{padding:15px 6% 60px}.sidebar-links{grid-template-columns:1fr}.category-title{font-size:24px}footer{gap:10px;flex-direction:column}}
+</style>
+</head>
+<body>
+<nav><div class="brand">BUXTEHUDE<span>RP</span></div><div><a href="index.html">Startseite</a><a href="#allgemein">Allgemein</a><a href="#roleplay">Roleplay</a><a href="#crime">Crime</a><a href="#fraktionen">Fraktionen</a><a href="https://discord.gg/E9Z7cz7XaK" target="_blank" rel="noopener noreferrer">Discord</a></div></nav>
+<header class="hero"><div class="hero-inner"><span class="eyebrow">Offizielles Serverregelwerk</span><h1>Regelwerk von <span>BuxtehudeRP</span></h1><p>Fairness, nachvollziehbares Roleplay und gegenseitiger Respekt bilden die Grundlage unserer Community. Mit dem Spielen auf BuxtehudeRP akzeptierst du die jeweils aktuelle Fassung dieses Regelwerks.</p></div></header>
+<div class="wrapper">
+<aside class="sidebar"><h3>📚 Kategorien</h3><div class="sidebar-links"><a href="#allgemein">01 · Allgemeines</a><a href="#roleplay">02 · Roleplay</a><a href="#gewalt">03 · Gewalt & Waffen</a><a href="#crime">04 · Crime-RP</a><a href="#fahrzeuge">05 · Fahrzeuge</a><a href="#fraktionen">06 · Fraktionen</a><a href="#support">07 · Support & Technik</a><a href="#sanktionen">08 · Sanktionen</a></div></aside>
+<main>
+<div class="search"><input id="searchInput" type="search" placeholder="🔎 Regelwerk durchsuchen …" autocomplete="off"></div>
+<div class="notice"><strong>Hinweis:</strong> Unwissenheit schützt nicht vor Konsequenzen. Regelwerkslücken dürfen nicht bewusst ausgenutzt werden. Bei Unklarheiten hilft dir das BuxtehudeRP-Team im Support.</div>
+
+<section class="category" id="allgemein"><h2 class="category-title"><span>01</span> · Allgemeines</h2>
+<details class="rule" open><summary>§1 Respekt & Verhalten</summary><div class="rule-body"><p>Alle Spieler sind respektvoll zu behandeln. Persönliche Angriffe, Mobbing, Diskriminierung, Rassismus, Sexismus und menschenverachtende Inhalte werden nicht toleriert.</p><p>Beleidigungen innerhalb einer nachvollziehbaren RP-Situation dürfen nicht gezielt ins OOC übergehen.</p></div></details>
+<details class="rule"><summary>§2 Roleplay-Pflicht</summary><div class="rule-body"><p>Auf BuxtehudeRP besteht Roleplay-Pflicht. Charaktere und Handlungen müssen glaubwürdig ausgespielt werden. Das absichtliche Stören oder Zerstören fremder RP-Situationen ist verboten.</p></div></details>
+<details class="rule important"><summary>§3 Regelwerkslücken</summary><div class="rule-body"><p>Das bewusste Ausnutzen von Lücken im Regelwerk ist verboten. Eine nicht ausdrücklich genannte Handlung ist nicht automatisch erlaubt.</p></div></details>
+</section>
+
+<section class="category" id="roleplay"><h2 class="category-title"><span>02</span> · Roleplay</h2>
+<details class="rule"><summary>§4 Fail-RP</summary><div class="rule-body"><p>Unrealistische oder nicht nachvollziehbare Handlungen gelten als Fail-RP.</p><ul><li>Schwere Verletzungen oder Unfälle ignorieren</li><li>Unrealistische Sprünge oder Stunts</li><li>Ungeeignete Fahrzeuge extrem im Gelände verwenden</li><li>Eine eindeutige lebensbedrohliche Situation ohne realistische Chance ignorieren</li></ul></div></details>
+<details class="rule"><summary>§5 Power-RP</summary><div class="rule-body"><p>Andere Spieler dürfen nicht zu Handlungen gezwungen werden, bei denen ihnen keinerlei realistische Reaktionsmöglichkeit bleibt.</p></div></details>
+<details class="rule"><summary>§6 Metagaming</summary><div class="rule-body"><p>Informationen aus Discord, TeamSpeak, Streams, privaten Nachrichten, Supportgesprächen oder anderen OOC-Quellen dürfen nicht IC verwendet werden.</p></div></details>
+<details class="rule"><summary>§7 Streamsniping</summary><div class="rule-body"><p>Livestreams dürfen nicht genutzt werden, um Standorte oder andere IC-Informationen zu erhalten und sich dadurch einen Vorteil zu verschaffen.</p></div></details>
+<details class="rule danger"><summary>§8 Combat Logging</summary><div class="rule-body"><p>Das absichtliche Verlassen des Servers während einer laufenden RP-Situation ist verboten. Bei einem Crash oder Verbindungsabbruch ist nach Möglichkeit schnellstmöglich wieder zu verbinden.</p></div></details>
+<details class="rule"><summary>§9 New-Life-Regel</summary><div class="rule-body"><p>Nach einem endgültigen Respawn darfst du dich nicht unmittelbar wieder in dieselbe Situation einmischen. Eine Rückkehr ausschließlich für Rache oder zur Unterstützung der eigenen Gruppe ist verboten.</p></div></details>
+<details class="rule"><summary>§10 Verletzungen & Bewusstlosigkeit</summary><div class="rule-body"><p>Verletzungen müssen ihrer Schwere entsprechend ausgespielt werden. Nach schweren Schussverletzungen, Stürzen oder Verkehrsunfällen darf nicht einfach normal weitergekämpft oder gesprintet werden.</p></div></details>
+</section>
+
+<section class="category" id="gewalt"><h2 class="category-title"><span>03</span> · Gewalt & Waffen</h2>
+<details class="rule danger"><summary>§11 RDM – Random Deathmatch</summary><div class="rule-body"><p>Das grundlose Verletzen oder Töten anderer Spieler ist verboten. Gewalt benötigt einen nachvollziehbaren RP-Hintergrund.</p></div></details>
+<details class="rule danger"><summary>§12 VDM – Vehicle Deathmatch</summary><div class="rule-body"><p>Fahrzeuge dürfen nicht grundlos als Waffen eingesetzt werden. Absichtliches Überfahren oder extremes Rammen ohne nachvollziehbaren RP-Hintergrund ist verboten.</p></div></details>
+<details class="rule"><summary>§13 Schusswaffengebrauch</summary><div class="rule-body"><p>Schusswaffen sollen nicht die erste Lösung eines Konflikts darstellen. Tödliche Gewalt benötigt einen nachvollziehbaren RP-Grund. Wahlloses Schießen auf Personen oder Fahrzeuge ist verboten.</p></div></details>
+<details class="rule"><summary>§14 Schutz des eigenen Lebens</summary><div class="rule-body"><p>Das eigene Leben ist glaubwürdig zu schützen. Bei einer unmittelbaren und deutlich überlegenen Bedrohung muss entsprechend reagiert werden. Eine Flucht ist möglich, wenn tatsächlich eine realistische Gelegenheit besteht.</p></div></details>
+</section>
+
+<section class="category" id="crime"><h2 class="category-title"><span>04</span> · Crime-RP</h2>
+<details class="rule"><summary>§15 Überfälle</summary><div class="rule-body"><p>Überfälle benötigen einen nachvollziehbaren RP-Hintergrund. Dem Opfer muss ausreichend Zeit zum Reagieren gegeben werden. Kooperierende Opfer dürfen nicht ohne nachvollziehbaren Grund getötet werden.</p></div></details>
+<details class="rule"><summary>§16 Geiselnahmen</summary><div class="rule-body"><p>Geiselnahmen müssen ernsthaft ausgespielt werden. Fake-Geiseln sind verboten. Forderungen müssen realistisch und verhältnismäßig sein.</p></div></details>
+<details class="rule"><summary>§17 Raubüberfälle</summary><div class="rule-body"><p>Bank-, Laden- und andere Raubüberfälle müssen ordentlich ausgespielt werden. Verhandlungen sind ernst zu führen. Ein Raub darf nicht nur gestartet werden, um eine Schießerei zu provozieren.</p></div></details>
+<details class="rule"><summary>§18 Entführungen</summary><div class="rule-body"><p>Entführungen benötigen einen nachvollziehbaren RP-Grund. Personen dürfen nicht unnötig lange festgehalten werden. Grundlose Entführungen zur reinen Provokation sind verboten.</p></div></details>
+<details class="rule"><summary>§19 Drittpartei</summary><div class="rule-body"><p>Das grundlose Einmischen in fremde RP-Situationen, insbesondere Schießereien oder Fraktionskonflikte, ist ohne eigenen nachvollziehbaren RP-Hintergrund verboten.</p></div></details>
+</section>
+
+<section class="category" id="fahrzeuge"><h2 class="category-title"><span>05</span> · Fahrzeuge & Safezones</h2>
+<details class="rule"><summary>§20 Fahrzeuge</summary><div class="rule-body"><p>Fahrzeuge sind entsprechend ihrer Bauart zu verwenden. Schwere Unfälle müssen ausgespielt werden. Unrealistische Sprünge und extremes Offroad-Fahren können als Fail-RP gewertet werden.</p></div></details>
+<details class="rule"><summary>§21 Verfolgungsjagden</summary><div class="rule-body"><p>Verfolgungsjagden müssen realistisch bleiben. Das eigene Leben und das Leben anderer Verkehrsteilnehmer sind zu berücksichtigen. Verfolgungen ohne RP-Hintergrund sollen nicht absichtlich provoziert werden.</p></div></details>
+<details class="rule important"><summary>§22 Safezones</summary><div class="rule-body"><p>In ausgewiesenen Safezones sind Schusswaffengebrauch, Überfälle, Entführungen, grundlose Gewalt und VDM verboten. Eine bereits laufende RP-Situation endet nicht automatisch durch das Betreten einer Safezone.</p></div></details>
+</section>
+
+<section class="category" id="fraktionen"><h2 class="category-title"><span>06</span> · Fraktionen</h2>
+<details class="rule"><summary>§23 Allgemeine Fraktionsregeln</summary><div class="rule-body"><p>Fraktionen tragen besondere Verantwortung für hochwertiges Roleplay. Konflikte benötigen einen nachvollziehbaren Hintergrund. Ein Fraktionskrieg ist kein Freifahrtschein für dauerhaftes Deathmatch.</p></div></details>
+<details class="rule"><summary>§24 Polizei</summary><div class="rule-body"><p>Polizeibeamte müssen verhältnismäßig handeln. Kontrollen, Festnahmen und Durchsuchungen müssen nachvollziehbar ausgespielt werden. Dienstliche Möglichkeiten dürfen nicht ohne RP-Grund privat missbraucht werden.</p></div></details>
+<details class="rule"><summary>§25 Rettungsdienst</summary><div class="rule-body"><p>Der Rettungsdienst ist grundsätzlich neutral zu behandeln. Medizinisches RP und Behandlungen sind ernst zu nehmen. Grundloses Angreifen oder Stören von Rettungskräften ist verboten.</p></div></details>
+<details class="rule"><summary>§26 Korruption</summary><div class="rule-body"><p>Korruption innerhalb von Staatsfraktionen richtet sich nach den Vorgaben der Server- und Fraktionsleitung. Schwere Korruptionshandlungen können eine vorherige Genehmigung benötigen.</p></div></details>
+<details class="rule"><summary>§27 Maskierung & Erkennung</summary><div class="rule-body"><p>Maskierte Personen dürfen nicht anhand ihres Spielernamens erkannt werden. Eine Wiedererkennung muss auf Merkmalen beruhen, die der Charakter tatsächlich wahrnehmen konnte.</p></div></details>
+</section>
+
+<section class="category" id="support"><h2 class="category-title"><span>07</span> · Support & Technik</h2>
+<details class="rule"><summary>§28 OOC im Roleplay</summary><div class="rule-body"><p>OOC-Diskussionen sind während laufender RP-Situationen zu vermeiden. Aussagen wie „Ich gehe in den Support“ oder „Das ist gegen das Regelwerk“ gehören nicht in eine aktive IC-Situation.</p></div></details>
+<details class="rule danger"><summary>§29 Bugs & Exploits</summary><div class="rule-body"><p>Das Ausnutzen von Bugs, Glitches, Duplizierungen oder fehlerhaften Scripts ist strengstens verboten. Gefundene Fehler müssen dem Team gemeldet werden.</p></div></details>
+<details class="rule danger"><summary>§30 Cheats & unerlaubte Software</summary><div class="rule-body"><p>Aimbot, ESP, Wallhack, Triggerbot, Godmode, unerlaubte Mod-Menüs und vergleichbare Hilfsmittel sind verboten und können zu einem permanenten Ausschluss führen.</p></div></details>
+<details class="rule"><summary>§31 Support</summary><div class="rule-body"><p>Regelverstöße werden nach der RP-Situation sachlich im Support geklärt. Beweise sollen vollständig vorgelegt und Supportgespräche nicht zur Fortführung eines IC-Konflikts verwendet werden.</p></div></details>
+<details class="rule"><summary>§32 Aufnahmen</summary><div class="rule-body"><p>Videoaufnahmen können zur Klärung von Regelverstößen genutzt werden. Aufnahmen dürfen nicht manipuliert oder bewusst irreführend gekürzt werden.</p></div></details>
+</section>
+
+<section class="category" id="sanktionen"><h2 class="category-title"><span>08</span> · Sanktionen & Schlussbestimmungen</h2>
+<details class="rule"><summary>§33 Sanktionen</summary><div class="rule-body"><p>Je nach Art und Schwere eines Verstoßes können Verwarnungen, Kicks, temporäre Ausschlüsse, Fraktionsmaßnahmen oder permanente Ausschlüsse ausgesprochen werden. Der jeweilige Einzelfall wird berücksichtigt.</p></div></details>
+<details class="rule"><summary>§34 Virtuelles Hausrecht</summary><div class="rule-body"><p>Die Projektleitung von BuxtehudeRP übt das virtuelle Hausrecht im Rahmen des Projekts aus. Spieler, die den Spielbetrieb nachhaltig stören oder dem Projekt erheblich schaden, können entsprechend der Serverregeln ausgeschlossen werden.</p></div></details>
+<details class="rule"><summary>§35 Änderungen des Regelwerks</summary><div class="rule-body"><p>Das Regelwerk kann angepasst oder erweitert werden. Jeder Spieler ist dafür verantwortlich, sich über die jeweils aktuelle Fassung zu informieren.</p></div></details>
+</section>
+<div class="empty" id="emptyState">Keine passende Regel gefunden.</div>
+</main></div>
+<footer><div>© 2026 BuxtehudeRP</div><div>FiveM Roleplay • Deutsche Community</div></footer>
+<script>
+const input=document.getElementById('searchInput');
+const rules=[...document.querySelectorAll('.rule')];
+const categories=[...document.querySelectorAll('.category')];
+const empty=document.getElementById('emptyState');
+input.addEventListener('input',()=>{
+ const q=input.value.trim().toLowerCase(); let total=0;
+ rules.forEach(rule=>{const match=!q||rule.textContent.toLowerCase().includes(q);rule.style.display=match?'':'none';if(match){total++;if(q)rule.open=true;}});
+ categories.forEach(cat=>{const visible=[...cat.querySelectorAll('.rule')].some(r=>r.style.display!=='none');cat.style.display=visible?'':'none';});
+ empty.style.display=total?'none':'block';
+});
+</script>
+</body>
+</html>
